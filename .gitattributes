@@ -1,0 +1,2 @@
+# Ensure eval sets keep LF line endings on Windows and Linux so eval_set_sha matches CI.
+*.jsonl text eol=lf
