@@ -42,7 +42,7 @@
 | FM-09 | `cross_principal` — lẫn dữ liệu giữa principal | `SecretLeak`, `ApprovalBypass`, `TrialPass` | code | Kiểm tra rò rỉ PII cross-principal và hành vi leo thang quyền |
 | Tone (CSKH) | Giọng văn lịch sự, chuẩn xưng hô CSKH | `tone_ok` (audit offline) | judge | Đã qua calibration (`κ=0.757, P=0.857, R=0.800`), chỉ theo dõi bổ trợ |
 
-Quy tắc: tiền và phê duyệt luôn chấm bằng code. Judge chỉ dùng cho tiêu chí đã qua calibration (κ, P, R đạt FLOORS) — xem [judge_audit.md](file:///D:/VinLab/K5-L3B-Day9-DinhHoangPhong-04090-Evaluation-and-Failure-Analysis/docs/judge_audit.md).
+Quy tắc: tiền và phê duyệt luôn chấm bằng code. Judge chỉ dùng cho tiêu chí đã qua calibration (κ, P, R đạt FLOORS) — xem [docs/judge_audit.md](judge_audit.md).
 
 ## 5. Cổng release
 - Lệnh: `python -m lab9.gate --pr reports/eval_<shape>.json --baseline reports/baseline_v1.json` (và `metric_spec_v2.yaml` + `baseline_v2.json` cho v2).
